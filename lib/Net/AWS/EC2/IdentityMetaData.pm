@@ -1,6 +1,6 @@
-package Net::AWS::EC2::IdentityMetaData;
+package Net::AWS::EC2::IdentityMetadata;
 {
-    $Net::AWS::EC2::IdentityMetaData::VERSION = '0.01';
+    $Net::AWS::EC2::IdentityMetadata::VERSION = '0.01';
 }
 
 use Moose;

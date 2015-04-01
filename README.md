@@ -5,7 +5,7 @@ Determine identity metadata on an EC2
 ### Sample Usage
 
 ```perl
-my $im = Net::AWS::EC2::IdentityMetaData->new();
+my $im = Net::AWS::EC2::IdentityMetadata->new();
 print Dumper $im->local_credentials();
 print Dumper $im->aws_access_key_id();
 print Dumper $im->aws_secret_access_key();
@@ -16,6 +16,6 @@ print Dumper $im->aws_token();
 
 Pass the port that your mocked aws metadat service is running on:
 ```perl
-my $im = Net::AWS::EC2::IdentityMetaData->new({ port => '45000' });
+my $im = Net::AWS::EC2::IdentityMetadata->new({ port => '45000' });
 ```
 

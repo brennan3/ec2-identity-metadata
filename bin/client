@@ -2,10 +2,10 @@
 use strict;
 use warnings;
 use lib 'lib';
-use Net::AWS::EC2::IdentityMetaData;
+use Net::AWS::EC2::IdentityMetadata;
 use Data::Dumper;
 
-my $im = Net::AWS::EC2::IdentityMetaData->new({ port => '45000' });
+my $im = Net::AWS::EC2::IdentityMetadata->new({ port => '45000' });
 
 print Dumper $im->local_credentials();
 print Dumper $im->aws_access_key_id();
