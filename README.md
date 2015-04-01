@@ -7,9 +7,9 @@ Determine identity metadata on an EC2
 ```perl
 my $im = Net::AWS::EC2::IdentityMetadata->new();
 print Dumper $im->local_credentials();
-print Dumper $im->aws_access_key_id();
-print Dumper $im->aws_secret_access_key();
-print Dumper $im->aws_token();
+print $im->aws_access_key_id();
+print $im->aws_secret_access_key();
+print $im->aws_token();
 ```
 
 ### Use with aws-mock-metadata
