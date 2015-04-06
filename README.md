@@ -16,7 +16,7 @@ print $im->aws_token();
 You need to be sure to set a header attribute for your aws token if you are using these credentials to interact with other AWS tools.  The header property is the X-Amz-Security-Token.  Here is an example grabbing S3 contents using S3::AWSAuthConnection:
 
 ```perl
-my $im = SMSZappos::IdentityMetadata->new();
+my $im = Net::AWS::EC2::IdentityMetadata->new();
 my $aws_access_key_id     = $im->aws_access_key_id();
 my $aws_secret_access_key = $im->aws_secret_access_key();
 my $token                 = $im->aws_token();
